@@ -6,6 +6,8 @@ gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 #Bootstrap gem used for styles
+gem 'bootstrap-sass', '~> 3.3.5.1'
+#Updated gem
 gem 'saas'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
