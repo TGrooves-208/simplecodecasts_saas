@@ -1,11 +1,12 @@
 class Users::RegistrationsController < Devise::RegistrationsController 
 	before_filter :select_plan, only: :new
-
+# The super do is also part of the error
 	def create
 		super do |resource|
 			if params[:plan]
 				resource.plan_id = params[:plan]
-				if resource.plan_id == 2
+				if resource.plan_id == 
+# This line is erroring out leading to no attached payment source as well 
 					resource.save_with_payment
 				else
 					resource.save 
